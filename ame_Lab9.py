@@ -9,7 +9,7 @@ def decode(password):
 	decode = ""
 	for num in password:
 		decode += str(int(num) - 3)
-	return encode
+	return decode
 
 
 def main():

@@ -4,6 +4,13 @@ def encode(password):
 	for num in password:
 		encode += str(int(num) + 3)
 	return encode
+	
+def decode(password):
+	decode = ""
+	for num in password:
+		decode += str(int(num) - 3)
+	return encode
+
 
 def main():
 	global password
@@ -16,7 +23,7 @@ def main():
 			print("Your password has been encoded and stored!")
 
 		if choice == "2":
-			print(f"The encoded password is {encode(password)} , and the original password is {password}")
+			print(f"The encoded password is {encode(password)} , and the original password is {decode(password)}")
 
 		if choice == 3:
 			break
